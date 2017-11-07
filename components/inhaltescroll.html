@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Scroll Ihnalte</title>
+        <style media="screen">
+            .hoch{
+
+                display: block;
+            }
+            .no1{
+                animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+                animation-delay: 0.1s;
+            }
+            .no2{
+                animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+                animation-delay: 0.15s;
+            }
+            .no3{
+                animation: animLoadedContent 1s cubic-bezier(0.7,0,0.3,1) both;
+                animation-delay: 0.3s;
+            }
+            @keyframes animLoadedContent {
+            	from {
+            		opacity: 0;
+            		transform: translate3d(0,300px,0);
+            	}
+            }
+            #map{
+                height: 400px;
+                width: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="static">
+            <h1>Hier ist der Statische Text</h1>
+        </div>
+        <div class="hoch">
+            <div class="no1">
+                <h1>Hier kommt die Map hinein</h1>
+
+                <div class="embed-responsive embed-responsive-16by9 col-xs-12 text-center">
+                      <iframe
+                      width="100%"
+                      height="450"
+                      frameborder="0" style="border:0"
+                      src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDCTKS-gFtXyWSKzXCu4ZxFbe6Mr6Tf2S8
+                        &q=Koenigstrasse66,Paderborn" allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+            <div class="no2">
+                <h1>Hier gibt es Infos zur den Leuten die mitkommen </h1>
+            </div>
+            <div class="no3">
+                <h2>hier gibts einen provisoirischen code </h2>
+                <p>28957hjkfndskj</p>
+                <p>oder man kann sich anmelden </p>
+                <button type="button" name="button">regsiere dich für PaderMeet</button>
+            </div>
+        </div>
+
+    </body>
+</html>

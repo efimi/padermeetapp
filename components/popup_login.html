@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style media="screen">
+        body{
+            background: grey;
+            display: block;
+        }
+            .loginbtn{
+                border-radius: 50px;
+                border: 0px solid white;
+                color: #fff;
+                overflow: hidden;
+                padding: 1em 6.18em;
+                margin: 15px 30px;
+                background: none;
+                letter-spacing: 0.15em;
+                font-weight: 700;
+                font-size: 1.6rem;
+                background: linear-gradient(260deg, #337eb9, #384499);
+                -webkit-box-shadow: 0 2px 4px 0 hsla(13, 8%, 42%, .27);
+                box-shadow: 0 2px 4px 0 hsla(13, 8%, 42%, .27)
+
+            }
+            span{
+                text-transform: uppercase;
+            }
+            .loginbtn:hover
+            {
+                background: #384499
+            }
+            .popup{
+                // Runde Ecken, Logo in der Mitte,
+                width: 440px;
+                animation: .25s ease 0s 1 normal forwards animOpening;
+                text-align: center;
+                //von oben wie bei einer Uhr, wenn zwei werte, dann vertikal, hoiryontal, wenn drei werte sind, dann top, hoiryont und bottom
+                padding: 36px 44px;
+
+                @-webkit-keyframes animOpening {
+                    0% {
+                        -webkit-transform: scale(.5);
+                        transform: scale(.5);
+                        opacity: 0
+                    }
+
+                    to {
+                        -webkit-transform: none;
+                        transform: none;
+                        opacity: 1
+                    }
+                }
+
+                @keyframes animOpening {
+                    0% {
+                        -webkit-transform: scale(.5);
+                        transform: scale(.5);
+                        opacity: 0
+                    }
+
+                    to {
+                        -webkit-transform: none;
+                        transform: none;
+                        opacity: 1
+                    }
+                }
+
+
+
+            }
+        </style>
+    </head>
+    <body>
+        <div class="popup">
+            Das ist ein popup,
+            bitte logge dich ein:
+            <button class="loginbtn" type="button" name="button"> <span>login with facebook</span></button>
+        </div>
+    </body>
+</html>
